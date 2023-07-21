@@ -6,7 +6,6 @@
   "license": "Public Domain",
   "private": true,
   "dependencies": {
-    "file-saver-saveas-js": "*",
     "handlebars": "~3.0",
     "jquery": "~1.12.4",
     "jquery-ui": "~1.11",

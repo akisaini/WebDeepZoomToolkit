@@ -1,4 +1,4 @@
-FROM node:8
+FROM node:12
 LABEL maintainer="National Institute of Standards and Technology"
 
 # Create app directory
@@ -26,7 +26,7 @@ RUN bower install --allow-root
 COPY . .
 
 # Package app
-RUN grunt all
+RUN grunt all --force
 
 # Expose 8080 (http-server default port)
 EXPOSE 8080

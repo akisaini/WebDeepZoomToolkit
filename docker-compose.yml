@@ -1,0 +1,17 @@
+version: "0.0.1"
+
+services:
+  web:
+    container_name: wdzt-test
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    working_dir: /WebDeepZoomToolkit
+    command: http-server -s
+    environment:
+      DEBUG: 1
+    volumes:
+      - ./:/WebDeepZoomToolkit
+    ports:
+      - 8081:8080
+    restart: on-failure

@@ -19,7 +19,7 @@
     $$.LayerSelectionModule = function(options) {
 
         this.name = name;
-        this.title = "Layer selection";
+        this.title = "Layer selection Hello";
 
         $.extend(true, this, {
             id: $$.guid()
